@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang=en>
+
+<head>
+
+    <meta charset=“UTF-8”>
+
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+
+    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+
+    <title> Register Here </title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <script defer src=js/registration.js></script>
+
+</head>
+
+<body>
+
+<ul>
+    <li style="float:left"> <a href="search.html">Search</a> </li>
+    <li style="float:left"> <a href="postImage.html">Post</a> </li>
+    <li style="float:left"> <a href="index.html">Home</a> </li>
+    <li style="float:right"> <a href="login.html">Login</a> </li>
+    <li style="float:right"> <a class="active" href="#register">Register</a> </li>
+</ul>
+
+<div><br><br><br><br></div>
+
+<div id="error"></div>
+
+<form id="form" action="/" method="GET" onsubmit="return addToObject()">
+
+    <div>
+        <h1>
+            Register Here
+        </h1>
+    </div>
+
+    <div>
+
+        <div class="form-group">
+
+            <label for="username"> Create Username: </label>
+
+            <input id="username" name="username" type="username" class="form-control" required>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="email"> Email: </label>
+
+            <input id="email" name="email" type="email" class="form-control" required>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="registrationPassword"> Create Password: </label>
+
+            <input id="registrationPassword" name="registrationPassword" type="password" class="form-control" required>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="confirmPassword"> Confirm Password: </label>
+
+            <input id="confirmPassword" name="confirmPassword" type="password" class="form-control" required>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <input type="checkbox" name="age" value="true" required> I am 13 years of age or older.
+            <br>
+            <input type="checkbox" name="tos" value="true" required> I agree to the Terms of Service and Privacy Rules.
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <button type="submit" class="btn btn-primary" onclick="console.log(list)"> Submit</button>
+
+</form>
+
+</body>
+
+</html>
